@@ -3,7 +3,7 @@
   background-color: var(--bg-block);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
 }
 
 .forecast h2 {
@@ -28,7 +28,7 @@
   background-color: var(--background-color);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 0 3px 3px rgba(0, 191, 255, 0.8);
+  box-shadow: 0 0 3px 3px rgb(0 191 255 / 80%);
   transition: background-color 1s ease;
 }
 

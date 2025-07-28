@@ -6,7 +6,7 @@
   background-color: var(--bg-block);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   color: var(--light-text-color);
   transition: background-color 1s ease;
 }
@@ -55,9 +55,6 @@
   display: grid;
   gap: 15px;
   text-align: center;
-}
-
-.weather-stats {
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -83,7 +80,7 @@
   padding: 10px;
   border-radius: 8px;
   min-height: 135px;
-  box-shadow: 0 0 3px 3px rgba(0, 191, 255, 0.8);
+  box-shadow: 0 0 3px 3px rgb(0 191 255 / 80%);
   font-size: 0.8rem;
   transition: background-color 1s ease;
 }
@@ -95,7 +92,6 @@
 .stat-item .humidity {
   display: flex;
   flex-direction: column;
-
   color: #3b6680;
   width: 100%;
 }
@@ -163,7 +159,7 @@
   padding: 15px;
   background-color: var(--background-color);
   border-radius: 10px;
-  box-shadow: 0 0 3px 3px rgba(0, 191, 255, 0.8);
+  box-shadow: 0 0 3px 3px rgb(0 191 255 / 80%);
   transition: background-color 1s ease;
 }
 

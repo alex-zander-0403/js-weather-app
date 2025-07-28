@@ -31,7 +31,7 @@ export function renderCurrentWeather(data, city) {
   currentCity.textContent = city || "неизвестно";
   currentTemperature.textContent = `${Math.round(data.main?.temp || "?")}°C`;
   currenteFeelsLike.textContent = `Ощущается как ${Math.round(
-    data.main?.feels_like || "?"
+    data.main?.feels_like || "?",
   )}°C`;
   currenteDescription.textContent =
     data.weather?.[0]?.description || "неизвестно";
@@ -52,10 +52,10 @@ export function renderCurrentWeather(data, city) {
   humidityIndicator(humidity);
 
   currentPressure.textContent = `${Math.round(
-    (data.main?.pressure || 0) * 0.750062
+    (data.main?.pressure || 0) * 0.750062,
   )}мм`;
   currentPressure.textContent = `${Math.round(
-    (data.main?.pressure || 0) * 0.750062
+    (data.main?.pressure || 0) * 0.750062,
   )}мм`;
 
   //
@@ -67,7 +67,7 @@ export function renderCurrentWeather(data, city) {
   dayLenght.textContent = `Длинна светового дня: ${
     sunrise && sunset ? calcDayLenght(sunrise, sunset) : "н/д"
   }`;
-  
+
   const sunPosition = sunrise && sunset ? calcSunPosition(sunrise, sunset) : 0;
   updateSunPosition(sunPosition);
 }

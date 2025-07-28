@@ -31,7 +31,7 @@ function getBrowserGeoLocation() {
         },
         (error) => {
           reject(error);
-        }
+        },
       );
     }
   });
@@ -54,7 +54,9 @@ async function getLocationName(latitude, longitude) {
     const data = await response.json();
 
     if (data && data.length > 0) {
+      // eslint-disable-next-line camelcase
       const { local_names } = data[0];
+      // eslint-disable-next-line camelcase
       const russianName = local_names?.ru || data[0].name;
       return `${russianName}`;
     } else {
@@ -63,7 +65,7 @@ async function getLocationName(latitude, longitude) {
   } catch (error) {
     console.error(
       "Ошибка при получении названия локации (getLocationName)",
-      error.message
+      error.message,
     );
     showError("Ошибка при получении названия локации");
   }
@@ -80,7 +82,7 @@ async function fetchWeatherByCoords(latitude, longitude, locationName) {
   } catch (error) {
     console.error(
       "Ошибка при получении погоды по координатам (fetchWeatherByCoords)",
-      error.message
+      error.message,
     );
     showError("Ошибка при получении погоды по координатам");
   }

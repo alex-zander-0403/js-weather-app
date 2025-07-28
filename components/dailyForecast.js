@@ -12,11 +12,11 @@ export function renderDaylyForecast(data) {
       const dayData = groupedData[dayKey];
 
       const maxTemp = Math.round(
-        Math.max(...dayData.map((item) => item.main.temp_max))
+        Math.max(...dayData.map((item) => item.main.temp_max)),
       );
 
       const minTemp = Math.round(
-        Math.min(...dayData.map((item) => item.main.temp_min))
+        Math.min(...dayData.map((item) => item.main.temp_min)),
       );
 
       const icon = dayData[0].weather[0].icon;

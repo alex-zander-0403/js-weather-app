@@ -21,7 +21,7 @@ export function showLastCities() {
     liEl.addEventListener("click", () => {
       cityInput.value = city;
       lastCitiesList.style.display = "none";
-      getGeoData(city)
+      getGeoData(city);
     });
 
     lastCitiesList.append(liEl);

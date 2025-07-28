@@ -38,7 +38,7 @@ export async function getGeoData() {
     }
 
     const { lat, lon } = geoData[0];
-    
+
     saveCityToLocalStorage(city);
 
     const weatherData = await getWeather(lat, lon);

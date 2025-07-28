@@ -13,6 +13,4 @@ export function getWeatherByForm() {
   cityInput.addEventListener("focus", () => {
     showLastCities();
   });
-
-  
 }

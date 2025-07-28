@@ -1,4 +1,4 @@
-const toTopEl = document.getElementById("toTop");
+const toTopEl = document.getElementById("to-top");
 
 toTopEl.addEventListener("click", scrollToTop);
 

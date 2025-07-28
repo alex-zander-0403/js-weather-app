@@ -16,7 +16,7 @@
   --bg-indicate: #64b5f6;
   --left-position: 5px;
   --rotate-angle: 0deg;
-  --background-image: url("../public/img/clouds.jpg"); 
+  --background-image: url("../public/img/clouds.jpg");
 }
 
 :root[data-theme="dark"] {
@@ -35,5 +35,5 @@
   --bg-indicate: #ec6e4d;
   --left-position: 35px;
   --rotate-angle: 360deg;
-  --background-image: url("../public/img/space.jpg"); 
+  --background-image: url("../public/img/space.jpg");
 }
