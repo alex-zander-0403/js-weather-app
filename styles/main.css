@@ -1,0 +1,71 @@
+@import url("variables.css");
+@import url("header.css");
+@import url("current.css");
+@import url("hourly.css");
+@import url("daily.css");
+@import url("toTop.css");
+@import url("footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  color: #3b6680;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: all 1s ease;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  transition: background-color 1s ease;
+  /*  */
+  background: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid var(--background-color);
+}
+
+/* Дополнительные стили*/
+#error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px #ffa500);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #ffa500);
+  }
+}
+
+.sun-disk {
+  animation: glow 2s infinite;
+}
