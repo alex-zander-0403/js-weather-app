@@ -1,6 +1,6 @@
 export function switchTheme() {
-  const switchTheme = document.getElementById("themeSwitch");
-  switchTheme.addEventListener("change", toggleTheme);
+  const switchThemeEl = document.getElementById("theme-switch");
+  switchThemeEl.addEventListener("change", toggleTheme);
   let userHasChosenTheme = false;
 
   // определение текущей темы и новой темы

@@ -1,11 +1,11 @@
-import { windDirection } from "../src/helpers/windDirectionIndicator.js";
-import { humidityIndicator } from "../src/helpers/humidityIndicator.js";
-import { formatTime } from "../src/helpers/formatTime.js";
-import { calcDayLenght } from "../src/helpers/calcDayLength.js";
+import { windDirection } from "../helpers/windDirectionIndicator.js";
+import { humidityIndicator } from "../helpers/humidityIndicator.js";
+import { formatTime } from "../helpers/formatTime.js";
+import { calcDayLenght } from "../helpers/calcDayLength.js";
 import {
   calcSunPosition,
   updateSunPosition,
-} from "../src/helpers/calcSunPosition.js";
+} from "../helpers/calcSunPosition.js";
 
 //
 const currentCity = document.querySelector(".city");

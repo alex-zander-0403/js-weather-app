@@ -3,5 +3,4 @@ export function getCurrentYear() {
 
   const yearEl = document.getElementById("currentYear");
   yearEl.textContent = currentYear;
-  //   return currentYear;
 }

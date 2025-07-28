@@ -1,5 +1,5 @@
-import { apiKey, baseUrl } from "../src/api/apiKeyAndHost.js";
-import { getWeather, getForecast } from "../src/api/getWeatherAndForecast.js";
+import { apiKey, baseUrl } from "../api/apiKeyAndHost.js";
+import { getWeather, getForecast } from "../api/getWeatherAndForecast.js";
 import { showError } from "./error.js";
 import { renderCurrentWeather } from "./currentWeather.js";
 import { renderHourlyForecast } from "./hourlyForecast.js";

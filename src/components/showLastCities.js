@@ -1,4 +1,4 @@
-import { getGeoData } from "../src/api/geoData.js";
+import { getGeoData } from "../api/geoData.js";
 import { cityInput } from "./inputForm.js";
 const lastCitiesList = document.getElementById("recent-cities-list");
 

@@ -1,4 +1,4 @@
-import { getGeoData } from "../src/api/geoData.js";
+import { getGeoData } from "../api/geoData.js";
 import { showLastCities } from "./showLastCities.js";
 
 const searchForm = document.querySelector(".search-form");
