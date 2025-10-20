@@ -1,1 +1,27 @@
 node_modules/
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы редакторов
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Логи
+*.log
+npm-debug.log*
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Файлы окружения (если будут)
+.env
+.env.local
+
+# Автогенерируемые файлы
+/dist
+/build
